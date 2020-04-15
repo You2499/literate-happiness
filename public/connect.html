@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Connect</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">	
+		<script src="js/jquery.min.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="js/game/connect.js"></script>
+		<link rel="stylesheet" href="css/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+		<script src="https://kit.fontawesome.com/0cb5e0e3de.js" crossorigin="anonymous"></script>
+		<style type="text/css">
+			body{
+		font-family: 'basier_circleregular';
+		margin: 20px;
+					}
+					button{
+						font-family: 'basier_circleregular';
+					}
+					input[type=text]{
+						font-family: 'basier_circleregular';
+					}
+
+					</style>
+	</head>
+<body>
+	<div align="center">
+		<div id="quiz_title">
+			
+		</div>
+		<div id="quiz_pic">
+			
+		</div>
+		
+		<div>
+			<form>		
+				<h3>Connect as audience participant</h3>
+				<div>
+					<label for="unofficial_team_name">Team name</label>
+					<input type="text" id="unofficial_team_name"  style="text-transform:uppercase"/>
+				</div>
+				<div>
+					<button id="btn_connect_unofficial" class="button button1">Connect</button>
+				</div>
+				
+				<h3>Connect as official participant</h3>
+				<div>
+					<label for="official_team_name">Team name</label>
+					<input type="text" id="official_team_name"  style="text-transform:uppercase"/>	
+				</div>
+				
+				<div>
+					<label for="official_team_code">Quiz Code</label>
+					<input type="password" id="official_quiz_code" maxlength="20" size="20"/>
+				</div>
+				<button id="btn_connect_official" class="btn btn-default">Connect</button>			
+
+				<h3>Connect as spectator</h3>			
+				<button id="btn_connect_spectator" class="btn btn-default">Connect</button>
+				
+				<h3>Connect as administrator</h3>
+				<div>
+					<label for="admin_password">Password</label>
+					<input type="text" id="admin_password" maxlength="20" size="20"/>
+				</div>				
+				<button id="btn_admin_connect" class="btn btn-default">Connect</button>
+			</form><p><br><br></p>
+			<button onclick="window.location.href = 'index.html';"><i class="fas fa-caret-left"></i> Go Back</button>
+		</div>
+	</div>
+	
+	<script>
+	
+	</script>
+</body>
+</html>
