@@ -2,7 +2,14 @@
   "name": "quiz",
   "version": "1.0.0",
   "description": "Multiplayer quiz with nodejs",
-  "main": "app.js",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/You2499/solid-octo-palm-tree"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "express-session": "^1.15.6",
@@ -10,19 +17,5 @@
     "html-entities": "^1.2.1",
     "socket.io": "^2.0.4",
     "string.prototype.startswith": "^0.2.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js"
-},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaan1337/quiz.git"
-  },
-  "author": "Shaan Nobee",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shaan1337/quiz/issues"
-  },
-  "homepage": "https://github.com/shaan1337/quiz#readme"
+  }
 }
